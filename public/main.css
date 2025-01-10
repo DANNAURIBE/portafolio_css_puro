@@ -1,0 +1,686 @@
+.contenedor {
+
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1px;
+  
+  }
+  
+  .img img {
+    height: 500px;
+    /* Mantiene la proporción de la imagen */
+    width: 500px;
+    margin-top: 250px;
+    /* asia abajp */
+    margin-right: 200px;
+    /* hacia la izquirda */
+    border-radius: 600px;
+    /* borde  */
+    margin-left: 300px;
+  
+  
+  }
+  
+  
+  /* From Uiverse.io by Admin12121 */
+  .button,
+  .input,
+  .select,
+  .textarea {
+    font: inherit;
+    font-size: 16px;
+  }
+  
+  
+  .col {
+    color: #fff;
+    max-width: 900px;
+    /* Aumenta según necesites */
+    margin-right: 0px;
+    /* Puede que necesites ajustar este valor también */
+    margin-top: 300px;
+    /* hacia abajo */
+    font-size: 1.9rem;
+    margin-left: 120px;
+    /* hacia la derecha */
+  
+  }
+  
+  h2 {
+    margin-right: 10px;
+    padding: 15px;
+  
+  
+  }
+  
+  .enfoque {
+    margin-right: 10px;
+    /* hacia la izquierda */
+    padding: 15px;
+  
+  }
+  
+  /* From Uiverse.io by jamik-dev */
+  .Download-button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 12px 20px;
+    color: white;
+    background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em rgba(59, 48, 78, 0.527);
+    letter-spacing: 0.05em;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s;
+  
+    margin-left: 10px;
+  
+  
+  
+  }
+  
+  .Download-button svg {
+    margin-right: 8px;
+    width: 25px;
+  }
+  
+  .Download-button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #3b82f6;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+  
+  .Download-button:active {
+    box-shadow: 0 0.3em 1em -0.5em #3b82f6;
+  }
+  
+  .Download-button::before {
+    content: "";
+    width: 4px;
+    height: 40%;
+    background-color: white;
+    position: absolute;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    left: 0;
+    transition: all 0.2s;
+  }
+  
+  .Download-button::after {
+    content: "";
+    width: 4px;
+    height: 40%;
+    background-color: white;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    right: 0;
+    transition: all 0.2s;
+  }
+  
+  .Download-button:hover::before,
+  .Download-button:hover::after {
+    height: 60%;
+  }
+  
+  .Download-button:hover::before {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transform: translate(5px, -15px) rotate(45deg);
+  }
+  
+  .Download-button:hover::after {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    transform: translate(-5px, 15px) rotate(45deg);
+  }
+  
+  /* el boton */
+  
+  /* experencia */
+  
+  .titulo {
+    color: rgb(255, 255, 255);
+    margin-top: -1200px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 2.5rem;
+  
+  }
+  
+  
+  
+  a {
+    color: inherit;
+  }
+  
+  /* cuadro */
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 280px;
+    position: relative;
+  
+  
+  }
+  
+  .modal-container {
+    max-height: 600px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to right, #293d789d, #8e4eb8ac);
+    /* Gradiente de colores */
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.25);
+    align-items: center;
+  }
+  
+  @media screen and (max-width: 1283px) {
+    .modal-container {
+      /* Ajustes para pantallas más pequeñas */
+      justify-content: space-evenly; /* Cambiar la distribución */
+      gap: 50px; /* Reducir el espacio entre los elementos */
+      flex-direction: column; /* Cambiar la dirección del flex a columna */
+      margin-top: 90px; /* Reducir el margen superior */
+      height: auto; /* Dejar que la altura se ajuste automáticamente */
+      margin-left: 10%; /* hacia la derecha */
+      width: 300%; 
+      
+      
+      
+     
+    }
+  }
+  
+  .modal-container-header {
+    padding: 16px 32px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+  }
+  
+  .modal-container-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1;
+    font-weight: 700;
+    font-size: 1.7rem;
+    /* Cambia el tamaño aquí */
+  }
+  
+  .modal-container-title svg {
+    width: 32px;
+    height: 32px;
+    color: #bb91ff;
+  }
+  
+  .modal-container-body {
+    padding: 24px 32px 51px;
+    overflow-y: auto;
+    font-size: 1.7rem;
+    /* Cambia el tamaño aquí */
+    color: #ffffff;
+  }
+  
+  .rtf ul,
+  .rtf ol {
+    margin-left: 20px;
+    list-style-position: inside;
+  }
+  
+  .rtf ol {
+    list-style: numeric;
+  }
+  
+  .rtf ul {
+    list-style: disc;
+  }
+  
+  
+  
+  .mayor {
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    height: 100vh;
+    margin-top: 300px;
+    gap: 600px;
+}
+
+@media screen and (max-width: 1283px) {
+    .mayor {
+        /* Ajustes para pantallas más pequeñas */
+        justify-content: space-between; /* Cambiar la distribución */
+        gap: 50px; /* Reducir el espacio entre los elementos */
+        flex-direction: column; /* Cambiar la dirección del flex a columna */
+        margin-top: 200px; /* Reducir el margen superior */
+        height: auto; /* Dejar que la altura se ajuste automáticamente */
+        
+    }
+}
+
+  
+  
+  /* carpeta */
+  .carpeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    position: relative;
+    gap: 600px; /* Espacio entre las carpetas */
+}
+
+@media screen and (max-width: 1283px) {
+    .carpeta {
+        /* Ajustes para pantallas más pequeñas */
+        gap: 200px; /* Reducir el espacio entre los elementos */
+        flex-direction: row; /* Cambiar la dirección de la columna a fila */
+        justify-content: space-around; /* Ajustar la distribución de los elementos */
+        align-items: flex-start; /* Alinear los elementos al inicio */
+        margin-top: 900px; /* Reducir el margen superior */
+        height: auto; /* Dejar que la altura se ajuste automáticamente */
+        margin-left: 25%; /* hacia la derecha */
+    }
+}
+
+  
+
+
+
+
+  /* Estilo base para la carpeta */
+  
+  .folder {
+    width: 400px;
+    /* Ancho de la carpeta */
+    height: 410px;
+    /* Alto de la carpeta */
+    border-radius: 20px;
+    /* Bordes redondeados */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Distribuir el espacio entre los elementos */
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    /* Sombra suave */
+    background: linear-gradient(to right, #293d78d3, #8e4eb8cd);
+    /* Gradiente de colores */
+    /* Fondo sólido de la carpeta */
+    position: relative;
+    /* Para permitir posicionar la imagen dentro de la carpeta */
+  }
+  
+  /* Establecer la imagen de fondo dentro de la carpeta */
+  .folder {
+    background-image: url('../assets/img/cap1.png');
+    background-size: 280px 210px;
+    /* Establece un tamaño fijo para la imagen */
+    background-position: center;
+    background-repeat: no-repeat;
+  
+  
+  }
+  
+  
+  /* Parte superior de la carpeta */
+  .folder-top {
+    background-color: #464687;
+    /* Color de fondo semi-transparente */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Pestaña de la carpeta */
+  .folder-tab {
+    width: 50px;
+    height: 15px;
+    background-color: #b0bce0;
+    position: absolute;
+    top: -10px;
+    /* Ajusta la posición de la pestaña */
+  }
+  
+  /* Estilo del título en la parte superior */
+  .folder-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  /* Cuerpo de la carpeta */
+  .folder-body {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Alinear los elementos verticalmente */
+    position: relative;
+    /* Para permitir el posicionamiento del botón */
+  }
+  
+  /* para que el link no tenga raya */
+  
+  a {
+    text-decoration: none;
+  }
+  
+  
+  /* Estilo del botón */
+  
+  .Documents-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+    height: 45px;
+    border: none;
+    padding: 0px 15px;
+    border-radius: 5px;
+    background-color: #464687;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 250px;
+  }
+  
+  .folderContainer {
+    width: 40px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+  }
+  
+  .fileBack {
+    z-index: 1;
+    width: 80%;
+    height: auto;
+  }
+  
+  .filePage {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    transition: all 0.3s ease-out;
+  }
+  
+  .fileFront {
+    width: 85%;
+    height: auto;
+    position: absolute;
+    z-index: 3;
+    opacity: 0.95;
+    transform-origin: bottom;
+    transition: all 0.3s ease-out;
+  }
+  
+  .text {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  
+  .Documents-btn:hover .filePage {
+    transform: translateY(-5px);
+  }
+  
+  .Documents-btn:hover {
+    background-color: #726bbd;
+  }
+  
+  .Documents-btn:active {
+    transform: scale(0.95);
+  }
+  
+  .Documents-btn:hover .fileFront {
+    transform: rotateX(30deg);
+  }
+  
+ 
+  /* muñeco */
+  .cajon {
+    display: flex;
+    flex-direction: column;
+    /* Organiza los elementos en una columna */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan si es necesario */
+    align-content: center;
+    /* Opcional, ayuda a alinear si hay múltiples filas de elementos */
+  
+    position: sticky;
+    top: 200px;
+    bottom: 20px; /* El contenedor dejará de ser sticky cuando se acerque a 100px de la parte inferior */
+  
+  }
+  
+  
+  .modelViewPort {
+  
+    perspective: 1000px;
+    width: 20rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .eva {
+    --EVA-ROTATION-DURATION: 4s;
+    transform-style: preserve-3d;
+    animation: rotateRight var(--EVA-ROTATION-DURATION) linear infinite alternate;
+  }
+  
+  .head {
+    position: relative;
+    width: 6rem;
+    height: 4rem;
+    border-radius: 48% 53% 45% 55% / 79% 79% 20% 22%;
+    background: linear-gradient(to right, white 45%, gray);
+  }
+  
+  .eyeChamber {
+    width: 4.5rem;
+    height: 2.75rem;
+    position: relative;
+    left: 50%;
+    top: 55%;
+    border-radius: 45% 53% 45% 48% / 62% 59% 35% 34%;
+    background-color: #0c203c;
+    box-shadow: 0px 0px 2px 2px white, inset 0px 0px 0px 2px black;
+    transform: translate(-50%, -50%);
+    animation: moveRight var(--EVA-ROTATION-DURATION) linear infinite alternate;
+  }
+  
+  .eye {
+    width: 1.2rem;
+    height: 1.5rem;
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .eye:first-child {
+    left: 12px;
+    top: 50%;
+    background: repeating-linear-gradient(65deg,
+        #9bdaeb 0px,
+        #9bdaeb 1px,
+        white 2px);
+    box-shadow: inset 0px 0px 5px #04b8d5, 0px 0px 15px 1px #0bdaeb;
+    transform: translate(0, -50%) rotate(-65deg);
+  }
+  
+  .eye:nth-child(2) {
+    right: 12px;
+    top: 50%;
+    background: repeating-linear-gradient(-65deg,
+        #9bdaeb 0px,
+        #9bdaeb 1px,
+        white 2px);
+    box-shadow: inset 0px 0px 5px #04b8d5, 0px 0px 15px 1px #0bdaeb;
+    transform: translate(0, -50%) rotate(65deg);
+  }
+  
+  .body {
+    width: 6rem;
+    height: 8rem;
+    position: relative;
+    margin-block-start: 0.25rem;
+    border-radius: 47% 53% 45% 55% / 12% 9% 90% 88%;
+    background: linear-gradient(to right, white 35%, gray);
+  }
+  
+  .hand {
+    position: absolute;
+    left: -1.5rem;
+    top: 0.75rem;
+    width: 2rem;
+    height: 5.5rem;
+    border-radius: 40%;
+    background: linear-gradient(to left, white 15%, gray);
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.25);
+    transform: rotateY(55deg) rotateZ(10deg);
+  }
+  
+  .hand:first-child {
+    animation: compensateRotation var(--EVA-ROTATION-DURATION) linear infinite alternate;
+  }
+  
+  .hand:nth-child(2) {
+    left: 92%;
+    background: linear-gradient(to right, white 15%, gray);
+    transform: rotateY(55deg) rotateZ(-10deg);
+    animation: compensateRotationRight var(--EVA-ROTATION-DURATION) linear infinite alternate;
+  }
+  
+  .scannerThing {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 60%;
+    top: 10%;
+    border-top: 180px solid #9bdaeb;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    transform-origin: top left;
+    mask: linear-gradient(to right, white, transparent 35%);
+    animation: glow 2s cubic-bezier(0.86, 0, 0.07, 1) infinite;
+  }
+  
+  .scannerOrigin {
+    position: absolute;
+    width: 8px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    left: 60%;
+    top: 10%;
+    background: #9bdaeb;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);
+    animation: moveRight var(--EVA-ROTATION-DURATION) linear infinite;
+  }
+  
+  @keyframes rotateRight {
+    from {
+      transform: rotateY(0deg);
+    }
+  
+    to {
+      transform: rotateY(25deg);
+    }
+  }
+  
+  @keyframes moveRight {
+    from {
+      transform: translate(-50%, -50%);
+    }
+  
+    to {
+      transform: translate(-40%, -50%);
+    }
+  }
+  
+  @keyframes compensateRotation {
+    from {
+      transform: rotateY(55deg) rotateZ(10deg);
+    }
+  
+    to {
+      transform: rotatey(30deg) rotateZ(10deg);
+    }
+  }
+  
+  @keyframes compensateRotationRight {
+    from {
+      transform: rotateY(55deg) rotateZ(-10deg);
+    }
+  
+    to {
+      transform: rotateY(70deg) rotateZ(-10deg);
+    }
+  }
+  
+  @keyframes glow {
+    from {
+      opacity: 0;
+    }
+  
+    20% {
+      opacity: 1;
+    }
+  
+    45% {
+      transform: rotate(-25deg);
+    }
+  
+    75% {
+      transform: rotate(5deg);
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  

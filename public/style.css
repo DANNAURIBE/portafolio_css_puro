@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+
+}
+
+
+body {
+  margin: 0;
+  background-color: #1a161f;
+  background-image:
+    url(../assets/img/dd.png),
+    repeating-linear-gradient(to right, transparent 0 500px, #392f538d 500px 501px);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  /* Evita que la imagen de fondo se repita */
+}
