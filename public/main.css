@@ -342,15 +342,12 @@
   
   /* Establecer la imagen de fondo dentro de la carpeta */
   .folder {
-    background-image: url('../assets/img/cap1.png');
+    background-image: url('../assets/img/cont.png');
     background-size: 280px 210px;
-    /* Establece un tamaño fijo para la imagen */
     background-position: center;
     background-repeat: no-repeat;
-  
-  
   }
-  
+ 
   
   /* Parte superior de la carpeta */
   .folder-top {
